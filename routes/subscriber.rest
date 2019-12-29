@@ -1,0 +1,27 @@
+
+### Get All subscribers
+GET http://localhost:3000/subscribers
+
+### Get By ID
+GET http://localhost:3000/subscribers/5e0709ebcc56a8334c182f35
+
+### Add subscriber
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name" : "Yatin Bodke",
+    "subscribedToChannel" : "MKBHD"
+}
+
+### Patch Subscriber / Partial Update
+PATCH http://localhost:3000/subscribers/5e070a16cc56a8334c182f36
+Content-Type: application/json
+
+{
+    "name" : "Sumit Zitshi",
+    "subscribedToChannel" : "Improvement Pill"
+}
+
+### Delete Subscriber
+DELETE http://localhost:3000/subscribers/5e070a26cc56a8334c182f37
